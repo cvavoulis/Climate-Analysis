@@ -33,6 +33,19 @@ from flask import Flask, jsonify
 
 app= Flask(__name__)
 
+@app.route("/")
+def welcome():
+    return (
+        f"Welcome to the Hawaii Climate Analysis API!<br/>"
+        f"Available Routes:<br/>"
+        f"/api/v1.0/precipitation<br/>"
+        f"/api/v1.0/stations<br/>"
+        f"/api/v1.0/tobs<br/>"
+        f"/api/v1.0/temp/start/end"
+    )
+
+
+
 @app.route("/api/v1.0/precipitation")
 def precipitation():
     precipitation_data=session.query(Measurement.date, Measurement.prcp).filter(Measurement.date>="2016-08-23").filter(Measurement.date<="2017-08-23").all()
