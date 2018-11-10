@@ -1,9 +1,9 @@
-# Surfs Up!
+## Surfs Up!
 
 ![surfs-up.jpeg](Images/surfs-up.jpeg)
 
 
-#Climate Analysis and Exploration
+# Climate Analysis and Exploration
 
 I used python, SQLAlchemy ORM queries, pandas, and Matplotlib to do basic climate analysis and data exploration of my climate database. 
 
